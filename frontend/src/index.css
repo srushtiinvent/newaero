@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-aero-ink transition-colors duration-300;
+  background: linear-gradient(135deg, #DEE6E9 0%, #C9D5DB 30%, #9FB5C4 70%, #E6E6E6 100%);
+  min-height: 100vh;
+}
+
+.dark body {
+  @apply text-midnight-text;
+  background: linear-gradient(135deg, #0F172A 0%, #111827 50%, #17203A 100%);
+}
+
+/* subtle scrollbar, matches slate theme instead of default OS chrome */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #9FB5C4; border-radius: 8px; }
+.dark ::-webkit-scrollbar-thumb { background: #334155; }
