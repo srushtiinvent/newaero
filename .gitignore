@@ -1,0 +1,17 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Build output
+frontend/dist/
+backend/dist/
+backend/.env
+.env
+.env.*
+
+# Java
+java-service/target/
+
+# OS files
+.DS_Store
+**/.DS_Store
